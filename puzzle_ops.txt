@@ -1,0 +1,8 @@
+(operator
+ move
+ (params
+  (<num> Object) (<Tile1> Object) (<Tile2> Object))
+ (preconds
+  (on <num> <Tile1>) (clear <Tile2>) (adj <Tile1> <Tile2>))
+ (effects
+  (on <num> <Tile2>) (clear <Tile1>) (del on <num> <Tile1>) (del clear <Tile2>)))
